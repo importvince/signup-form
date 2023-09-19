@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "svg" "login" "login";
+
+}
+
+.container {
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: "svg";
+}
+
+#svg-background-1 {
+    width: 500px;
+    height: 50vh;
+    background-image: url(./assets/fans.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+form {
+    grid-area: "login";
+}

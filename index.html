@@ -7,40 +7,41 @@
     <title>Fantasy Football</title>
 </head>
 <body>
-    <div id="background">
-        <image></image>
+    <div class="container">
+        <svg id="svg-background-1"></svg>
     </div>
     <form>
         <div>
-            <label for="">
-                <span></span>
-                <input type="text">
+            <label for="first_name" data-help="What does your mom call you?">
+                <span>First Name: </span>
+                <input type="text" id="first_name" name="first_name" placeholder="Nick" value="" size="30" maxlength="245" pattern="^[^0-9]+$" required>
             </label>
         </div>
         <div>
-            <label for="">
-                <span></span>
-                <input type="text">
+            <label for="last_name" data-help="What would the back of your jersey read?">
+                <span>Last Name: </span>
+                <input type="text" id="last_name" name="last_name" placeholder="Chubb" value="" size="30" maxlength="245" pattern="^[^0-9]+$" required>
             </label>
         </div>
         <div>
-            <label for="">
-                <span></span>
-                <input type="text">
+            <label for="email" data-help="What's your email? Ex: nick.chubb@browns.com">
+                <span>Email: </span>
+                <input type="email" id="email" name="email" value="" placeholder="nick.chubb@browns.com" size="30" maxlength="100" required>
             </label>
         </div>
         <div>
-            <label for="">
-                <span></span>
-                <input type="text">
+            <label for="password" data-help="Must be at least 6 characters and contain at least 1 uppercase letter, 1 lowercase letter, 1 number, with no spaces">
+                <span>Password: </span>
+                <input type="password" id="password" name="password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" required>
             </label>
         </div>
         <div>
-            <label for="">
-                <span></span>
-                <input type="text">
+            <label for="confirm_password">
+                <span>Confirm Password: </span>
+                <input type="password" id="confirm_password" name="confirm_password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" required>
             </label>
         </div>
+        <button type="submit" class="button">Create Account</button>
     </form>
 </body>
 </html>
