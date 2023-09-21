@@ -21,7 +21,7 @@
         <div class="form-container">
             <form>
                 <div class="h2">
-                    <span>Sign up for free:</span>
+                    <span>Create your account:</span>
                 </div>
 
                 <div>
@@ -59,7 +59,76 @@
                     </label>
                 </div>
 
-                <button type="submit" class="button">Create Account</button>
+                <div>
+                    <label for="fav-team">Favorite Team:</label>
+                    <select id="fav-team" name="fav-team">
+                        <option value="">pick a team</option>
+                        <option value="cardinals">Arizona Cardinals</option>
+                        <option value="falcons">Atlanta Falcons</option>
+                        <option value="panthers">Carolina Panthers</option>
+                        <option value="bears">Chicago Bears</option>
+                        <option value="cowboys">Dallas Cowboys</option>
+                        <option value="lions">Detroit Lions</option>
+                        <option value="packers">Green Bay Packers</option>
+                        <option value="rams">Los Angeles Rams</option>
+                        <option value="vikings">Minnesota Vikings</option>
+                        <option value="saints">New Orleans Saints</option>
+                        <option value="giants">New York Giants</option>
+                        <option value="eagles">Philadelphia Eagles</option>
+                        <option value="49ers">San Francisco 49ers</option>
+                        <option value="seahawks">Seattle Seahawks</option>
+                        <option value="buccaneers">Tampa Bay Buccaneers</option>
+                        <option value="commanders">Washington Commanders</option>
+                        <option value="ravens">Baltimore Ravens</option>
+                        <option value="bills">Buffalo Bills</option>
+                        <option value="bengals">Cincinnati Bengals</option>
+                        <option value="browns">Cleveland Browns</option>
+                        <option value="broncos">Denver Broncos</option>
+                        <option value="texans">Houston Texans</option>
+                        <option value="colts">Indianapolis Colts</option>
+                        <option value="jaguars">Jacksonville Jaguars</option>
+                        <option value="chiefs">Kansas City Chiefs</option>
+                        <option value="raiders">Las Vegas Raiders</option>
+                        <option value="chargers">Los Angeles Chargers</option>
+                        <option value="dolphins">Miami Dolphins</option>
+                        <option value="patriots">New England Patriots</option>
+                        <option value="jets">New York Jets</option>
+                        <option value="steelers">Pittsburgh Steelers</option>
+                        <option value="titans">Tennessee Titans</option>
+                    </select>
+                </div>
+
+                <div class="radio">
+                    <fieldset>
+                        <legend>Experience Level:</legend>
+                        <div>
+                            <input type="radio" name="experience" value="1" id="rookie">
+                            <label for="rookie">rookie</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="experience" value="2" id="vet">
+                            <label for="vet">vet</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="experience" value="3" id="legend">
+                            <label for="legend">legend</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="checkbox">
+                    <fieldset>
+                        <legend>would you like to receive our fantasy newsletter?:</legend>
+                        <div>
+                            <input type="checkbox" name="yes" value="yes" id="yes">
+                            <label for="yes">sign me up</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+
+                <button class="btn" type="submit" class="button">Create Account</button>
 
             </form>
         </div>

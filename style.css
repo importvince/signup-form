@@ -65,6 +65,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.125rem;
     line-height: 1.5;
+    background-color: #212121
 }
 
 .all-container {
@@ -83,7 +84,7 @@ body {
 }
 
 .hero-container {
-    height: 250px;
+    height: 180px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -100,13 +101,15 @@ body {
 
 .text-overlay {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100px;
+    width: 70%;
+    height: 110px;
     text-align: center;
     color: #212121;
+    background-color: yellow;
+    border-radius: 10px;
 }
 
 .text-overlay h1 {
@@ -127,11 +130,12 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .form-container input {
     width: 100%;
+    border: 2px solid;
 }
 
 .form-container input:valid {
@@ -140,4 +144,27 @@ form {
 
 .form-container input:invalid {
     border-color: red;
+}
+
+.btn {
+    background-color: ghostwhite;
+    border-radius: 20px;
+    color: #212121;
+    font-weight: 700;
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: #212121;
+}
+
+.btn:focus {
+    outline: 2px yellow;
+}
+
+.radio {
+    display: flex;
 }
