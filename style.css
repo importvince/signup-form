@@ -133,3 +133,11 @@ form {
 .form-container input {
     width: 100%;
 }
+
+.form-container input:valid {
+    border-color: green;
+}
+
+.form-container input:invalid {
+    border-color: red;
+}
