@@ -9,7 +9,7 @@
 }
 
 html {
-    color-scheme: light;
+    color-scheme: light dark;
 }
 
 img, picture, svg, video {
@@ -59,64 +59,77 @@ select {
 
 /* end of default styles */
 
+/* basic reponsiveness */
+
 body {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
+
+.all-container {
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+}
+
+/* end basic reponsiveness */
 
 .all-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    background-color: #F5F5DC;
+    gap: 30px;
+}
+
+.hero-container {
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
     border-radius: 10px;
 }
 
-.header-svg-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero {
+    display: block;
+    margin: 0 auto;
 }
 
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #212121;
+}
+
+.text-overlay h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #FFB000;
-    letter-spacing: 2px;
-    text-align: center;
-    position: absolute;
-    z-index: 1;
-    top: 5%;
+    font-style: italic;
 }
 
-.svg-container {
-    width: 90vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#svg-background-1 {
-    background-image: url(./assets/fans.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+.text-overlay p {
+    font-size: 2rem;
+    margin-top: -15px;
 }
 
 .form-container {
-    grid-area: "login";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    width: 100%;
 }
 
-.form-container > div {
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input {
     width: 100%;
 }
