@@ -8,18 +8,15 @@
 </head>
 <body>
     <div class="all-container">
-        <div class="top-contianer">
-            <div class="hero-container">
-                <img src="./assets/patrick-ogilvie-GB9XKDZWwp0-unsplash.jpg" class="hero">
-                <div class="text-overlay">
-                    <h1>bellcow</h1>
-                    <p>fantasy football</p>
-                </div>
-            </div>
+        <div class="background-img">
         </div>
 
         <div class="form-container">
             <form>
+                <div class="text-overlay">
+                    <h1>bellcow</h1>
+                    <p>fantasy football</p>
+                </div>
                 <div class="h2">
                     <span>Create your account:</span>
                 </div>
@@ -39,27 +36,28 @@
                 </div>
 
                 <div>
-                    <label for="email" data-help="What's your email? Ex: nick.chubb@browns.com">
+                    <label for="email">
                         <span>Email: </span>
                         <input type="email" id="email" name="email" value="" placeholder="nick.chubb@browns.com" size="30" maxlength="100" required>
                     </label>
+                    <span data-help="What's your email?"></span>
                 </div>
 
                 <div>
-                    <label for="password" data-help="Must be at least 6 characters and contain at least 1 uppercase letter, 1 lowercase letter, 1 number, with no spaces">
+                    <label for="password" data-help=">6 char w/ min 1 upper, 1 lower, & 1 number. no spaces!">
                         <span>Password: </span>
-                        <input type="password" id="password" name="password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" required>
+                        <input type="password" id="password" name="password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" placeholder="Password123!" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="confirm_password">
                         <span>Confirm Password: </span>
-                        <input type="password" id="confirm_password" name="confirm_password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" required>
+                        <input type="password" id="confirm_password" name="confirm_password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" placeholder="Password123!" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="fav-team">
                     <label for="fav-team">Favorite Team:</label>
                     <select id="fav-team" name="fav-team">
                         <option value="">pick a team</option>
@@ -98,35 +96,10 @@
                     </select>
                 </div>
 
-                <div class="radio">
-                    <fieldset>
-                        <legend>Experience Level:</legend>
-                        <div>
-                            <input type="radio" name="experience" value="1" id="rookie">
-                            <label for="rookie">rookie</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="experience" value="2" id="vet">
-                            <label for="vet">vet</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="experience" value="3" id="legend">
-                            <label for="legend">legend</label>
-                        </div>
-                    </fieldset>
-                </div>
-
                 <div class="checkbox">
-                    <fieldset>
-                        <legend>would you like to receive our fantasy newsletter?:</legend>
-                        <div>
-                            <input type="checkbox" name="yes" value="yes" id="yes">
-                            <label for="yes">sign me up</label>
-                        </div>
-                    </fieldset>
+                        <input type="checkbox" name="yes" value="yes" id="yes">
+                        <label for="yes">Sign up for our fantasy newsletter?</label>
                 </div>
-
-
 
                 <button class="btn" type="submit" class="button">Create Account</button>
 
