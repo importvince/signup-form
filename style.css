@@ -330,3 +330,5 @@ input[type="checkbox"]:checked + label:before {
     }
 
 }
+
+/* still need to double check form validations, make sure the form submits somewhere */
