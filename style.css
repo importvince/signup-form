@@ -84,7 +84,7 @@ body {
 }
 
 .form-container {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .text-overlay {
@@ -123,7 +123,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 80px;
+    margin: 30px;
     font-size: 0.8rem;
     color: #141E46;
 }
@@ -150,33 +150,6 @@ form label {
 .form-container input:invalid {
     border-color: #C70039;
 }
-
-/* @keyframes silo-help {
-    0% {
-        opacity: 0;
-    }
-    4% {
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
-
-/* .form-container input:invalid + span:after {
-    content: " (" attr(data-help) ")";
-    font-weight: 300;
-    font-size: 0.8rem;
-    animation: silo-help 100s;
-}
-
-.form-container label:after + input:focus:invalid {
-    content: " (" attr(data-help) ")";
-    animation: silo-help 100s;
-} */
 
 .form-container input::-moz-placeholder {
     font-weight: 300;
@@ -206,9 +179,15 @@ form label {
     border-color: #141E46;
 }
 
+.error-message {
+    color:#C70039;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
 
 .fav-team {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #fav-team {
@@ -288,6 +267,23 @@ input[type="checkbox"]:checked + label:before {
     display: none;
 }
 
+.attribution {
+    margin-top: 0px;
+    margin-left: 70px;
+    font-style: italic;
+    font-size: 0.8rem;;
+}
+
+.attribution a {
+    color: #FF6969;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: #C70039;
+}
+
 @media (min-width: 821px) {
     .all-container {
         display: flex;
@@ -319,16 +315,19 @@ input[type="checkbox"]:checked + label:before {
     .hero-text {
         display: block;
         position: absolute;
-        top: 25%;
-        left: 10%;
+        top: 12%;
+        left: 25%;
         transform: translateY(-25%, -25%);
         text-align: center;
         color: azure;
-        /* background-color: rgb(20, 30, 70, .5); */
+        background-color: rgb(20, 30, 70, .5);
         font-size: 3rem;
-        width: 500px;
+        width: 700px;
+        border-radius: 5px;
+        padding: 3px;
     }
 
+    .attribution {
+        margin-top: -50px;
+        margin-left: 30px;
 }
-
-/* still need to double check form validations, make sure the form submits somewhere */

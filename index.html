@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Fantasy Football</title>
 </head>
 <body>
     <div class="all-container">
         <div class="background-img">
-            <span class="hero-text">Voted #1 Fantasy Football website by the New York Times</span>
+            <span class="hero-text">Voted #1 Fantasy Football platform by the Hitchhiker's Guide</span>
         </div>
 
         <div class="form-container" id="form-container">
@@ -24,38 +25,44 @@
 
                 <div>
                     <label for="first_name" data-help="What does your mom call you?">
-                        <span>First Name: </span>
+                        <span>*First Name: </span>
                         <input type="text" id="first_name" name="first_name" placeholder="Nick" value="" size="30" maxlength="245" pattern="^[^0-9]+$" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="last_name" data-help="What would the back of your jersey read?">
-                        <span>Last Name: </span>
+                        <span>*Last Name: </span>
                         <input type="text" id="last_name" name="last_name" placeholder="Chubb" value="" size="30" maxlength="245" pattern="^[^0-9]+$" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="email">
-                        <span>Email: </span>
-                        <input type="email" id="email" name="email" value="" placeholder="nick.chubb@browns.com" size="30" maxlength="100" required>
+                        <span>*Email: </span>
+                        <input type="email" id="email" name="email" value="" placeholder="nick.chubb@browns.com" size="30" maxlength="100" pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" required>
                     </label>
                     <span data-help="What's your email?"></span>
                 </div>
 
                 <div>
                     <label for="password" data-help=">6 char w/ min 1 upper, 1 lower, & 1 number. no spaces!">
-                        <span>Password: </span>
-                        <input type="password" id="password" name="password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" placeholder="Password123!" required>
+                        <span>*Password: </span>
+                        <input type="password" id="password" name="password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" placeholder="Password123" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="confirm_password">
-                        <span>Confirm Password: </span>
-                        <input type="password" id="confirm_password" name="confirm_password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" placeholder="Password123!" required>
+                        <span>*Confirm Password: </span>
+                        <input type="password" id="confirm_password" name="confirm_password" value="" pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$" placeholder="Password123" required>
                     </label>
+                </div>
+
+                <div id="pw-error" class="error-message"></div>
+
+                <div>
+                    <span>*Indicates required fields</span>
                 </div>
 
                 <div class="fav-team">
@@ -102,10 +109,11 @@
                         <label for="yes">Sign up for our fantasy newsletter?</label>
                 </div>
 
-                <button class="btn" type="submit" class="button">Create Account</button>
+                <button class="btn" type="submit" id="submit">Create Account</button>
 
             </form>
         </div>
     </div>
+    <div id="attribution" class="attribution">created by <a href="https://github.com/importvince">import vince</a></div>
 </body>
 </html>
