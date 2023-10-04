@@ -46,6 +46,7 @@ Here's the mobile view
 3. How to use javascript to check for password match
 4. How to send to a thank you page on form submission
 5. How to style checkboxes...tricky!
+6. The setCustomValidity() and checkValidity() attributes - basically how to control when an input is considered invalid / valid and what to show the user when it's invalid. Also how to style this message. 
 
 
 ### Continued development
